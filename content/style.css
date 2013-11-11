@@ -1,0 +1,182 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+/*======================RESET===================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ /*HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*======================RESET===================*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+  width: 960px;
+  margin: 0px auto;
+}
+
+#content p {
+	font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #e7e7e7;
+}
+
+a:hover {
+  color: #f90;
+}
+
+/*=====================================*/
+
+#header {
+  width: 940px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: white;
+}
+
+#header h1 {
+  font-size: 42px;
+  font-weight: 300;
+  color: black;
+  letter-spacing: 2px;
+	font-variant: normal;
+}
+
+#navigation {
+  width: 940px;
+  height: 20px;
+  padding: 0 auto;
+}
+
+#navigation-buttons {
+  width: 400px;
+  margin: 10px auto;
+}
+
+#navigation-buttons ul {
+  height: 40px;
+  width: 400px;
+  padding: 0;
+  list-style-type: none;
+}
+
+#navigation-buttons li {
+  width: 100px;
+  height: 18px;
+  font-size: 18px;
+  line-height: 18px;
+  float: left;
+  text-align: center;
+	font-variant: small-caps;
+}
+
+#navigation a:link,
+a:visited {
+  color: #89979b;
+}
+
+/*=====================================*/
+
+#main {
+  width: 940px;
+  height: 350px;
+  margin: 10px auto 0 auto;
+  padding: auto 0px;
+  background-color: white;
+}
+
+#main h1 {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+
+#main p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#main ul, #main ol {
+  margin: 20px;
+}
+
+#main li {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#main ul li {
+  list-style-type: square;
+}
+
+/*=====================================*/
+
+#bio-headshot {
+  float:  right;
+  margin: 10px;
+  width:485px;
+}
+
+#bio-text {
+	float: left;
+  margin: 10px;
+  width: 400px;
+}
+
+/*=====================================*/
+
