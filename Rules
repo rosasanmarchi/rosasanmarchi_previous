@@ -15,7 +15,8 @@
 
 ['style', 
  'reset',
- 'resume_styles'
+ 'resume_styles',
+ 'photos_styles'
 ].each do |css_sheet|
   compile "/#{css_sheet}/"  do
     #don't filter or layout
@@ -24,7 +25,6 @@
   route "/#{css_sheet}" do
     "/#{css_sheet}.css"
   end
-
 end
 
 compile '*' do

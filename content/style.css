@@ -155,15 +155,6 @@ a:visited {
   margin: 20px;
 }
 
-#main li {
-  font-size: 15px;
-  line-height: 20px;
-}
-
-#main ul li {
-  list-style-type: square;
-}
-
 /*=====================================*/
 
 #bio-headshot {
