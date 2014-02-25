@@ -1,8 +1,8 @@
 var Thumbs = Backbone.Collection.extend({
   model: Thumb,
   fetch: function() {
-    return _.map(urls, function(url) { 
-      return new Thumb({uri: url})
+    return _.map(urls, function(address) { 
+      return new Thumb({uri: address.image, thumb: address.thumb})
     });
   },
   select: function(model) {

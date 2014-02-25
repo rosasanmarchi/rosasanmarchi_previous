@@ -13,25 +13,34 @@
       <div id="content">
         <div id="header">
           <h1>Rosa SanMarchi</h1>
-          <hr>
           <div id="navigation">
             <div id="navigation-buttons">
               <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/resume.html">Resume</a></li>
-                <li><a href="/photos.html">Photos</a></li>
-                <li><a href="/video.html">Video</a></li>
+                <li><a href="/index.html">home</a></li>
+                <li><a href="/resume.html">resume</a></li>
+                <li><a href="/photos.html">photos</a></li>
+                <li><a href="/video.html">video</a></li>
+                <li><a href="/contact.html">contact</a></li>
               </ul>
             </div>
           </div>
-          <hr>
         </div>
         <div id="main">
           <script type="text/javascript" src="/public/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="/public/underscore-min.js"></script>
 <script type="text/javascript" src="/public/backbone-min.js"></script>
 <script type="text/javascript" src="/public/json2.js"></script>
-<link rel="stylesheet" href="photos_styles.css">
+
+<div id="navigation-photo">
+  <div id="navigation-photo-buttons">
+    <ul>
+      <li><a href="/photos.html">headshots</a></li>
+      <li><a href="/production-photos.html">production photos</a></li>
+   </ul>
+ </div>
+</div>
+
+
 
 <div id="photo-container">
   <div id="thumbs-container">
@@ -44,10 +53,9 @@
 
 <script type="text/javascript">
   var urls = [
-    '/images/pic1.jpg',
-    '/images/pic2.JPG',
-    '/images/pic3.JPG',
-    '/images/pic4.jpg'
+    {image: '/images/rosa_smile_800.jpg',  thumb:'/images/rosa_smile_125.jpg'},
+    {image: '/images/rosa_orange_800.jpg', thumb: '/images/rosa_orange_125.jpg'},
+    {image: '/images/rosa_gray_800.jpg',   thumb: '/images/rosa_gray_125.jpg'}
   ]
 </script>
 
@@ -63,7 +71,12 @@
   window.App.render();
 </script>
         </div>
-     </div>
+        <!--<div id="footer">-->
+          <!--<div id="footer-text">-->
+            <!--Copyright 2014 Rosa SanMarchi - info@rosasanmarchi.com-->
+          <!--</div>-->
+        <!--</div>-->
+      </div>
     </div>
   </body>
 </html>

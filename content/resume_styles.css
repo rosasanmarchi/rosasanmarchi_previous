@@ -25,3 +25,7 @@
 	text-align: left;
 	margin-left: 20px;
 }
+
+#bottom-buffer {
+  height: 40px;
+}

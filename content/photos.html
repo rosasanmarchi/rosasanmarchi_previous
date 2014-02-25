@@ -1,11 +1,8 @@
 ---
 title: Photos
 ---
-<script type="text/javascript" src="/public/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="/public/underscore-min.js"></script>
-<script type="text/javascript" src="/public/backbone-min.js"></script>
-<script type="text/javascript" src="/public/json2.js"></script>
-<link rel="stylesheet" href="photos_styles.css">
+
+<%= render '_photo_header'%>
 
 <div id="photo-container">
   <div id="thumbs-container">
@@ -18,10 +15,9 @@ title: Photos
 
 <script type="text/javascript">
   var urls = [
-    '/images/pic1.jpg',
-    '/images/pic2.JPG',
-    '/images/pic3.JPG',
-    '/images/pic4.jpg'
+    {image: '/images/rosa_smile_800.jpg',  thumb:'/images/rosa_smile_125.jpg'},
+    {image: '/images/rosa_orange_800.jpg', thumb: '/images/rosa_orange_125.jpg'},
+    {image: '/images/rosa_gray_800.jpg',   thumb: '/images/rosa_gray_125.jpg'}
   ]
 </script>
 

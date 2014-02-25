@@ -1,6 +1,6 @@
 var ThumbView = Backbone.View.extend({
   tagName: 'li',
-  template: _.template('<img src="<%= uri %>" class="thumbnail <%= state %>" />'),
+  template: _.template('<img src="<%= thumb %>" class="thumbnail <%= state %>" />'),
   events: {
     "click" : "selectThumb"
   },
@@ -8,7 +8,6 @@ var ThumbView = Backbone.View.extend({
     this.model.bind('change',this.render, this);
   },
   render: function() {
-    console.log('rendering');
     $(this.el).html(this.template(this.model.toJSON()));
     return this;
   },
