@@ -1,0 +1,108 @@
+---
+title: Resume
+---
+
+<div class='resume'>
+  <a href="http://www.google.com">
+    <table class='film three-column'>
+      <tr>
+        <th>Film/Television</th>
+      </tr>
+      <% film_television = [["Fall in Love","Lead","Dir: Sorrel Ahlfeld"],
+                            ["Victims of Gravity","Lead","Dir: Vlady Valentin Ozskiel"],
+                            ["Juke","Lead","Dir: Vincent LaRusso"],
+                            ["Sally Loves Billy","Supporting","Dir: Nathan Pata"],
+                            ["My Night At Maud’s","Supporting & Editor","Dir: Alice Carter"],
+                            ["Man On Fire","Lead & Writer","Dir: Jason Weissbrod"]] %>
+
+      <% film_television.each do |title, role, director| %>
+        <tr>
+          <td class="col1"><%= title %></td>
+          <td class="col2"><%= role %></td>
+          <td class="col3"><%= director %></td>
+        </tr>
+      <% end %>
+    </table>
+
+    <% theater_roles = [["4PLAY sex in a series","Rachel","The Den Theatre, Chicago"],
+                        ["Emma","Almeda/Rose","New Suit Theatre Co., Chicago"],
+                        ["Lift & Separate","Jane","Theater Wit, Chicago"],
+                        ["The Last Word","Libby","Gorilla Tango Theatre, Chicago"],
+                        ["Puck Love","Queen Titania","Ventura Court Theater, LA"],
+                        ["Sex, Relationships, & Sometimes Love","Bulgarian Princess","The Actors Playpen, LA"],
+                        ["Diary Of A Catholic School Dropout","School Girl #5","Whitmore Lindley Theatre, LA"],
+                        ["Balderdash","Director","Ventura Court Theater, LA"],
+                        ["Ancient History","Ruth","Ventura Court Theater, LA"],
+                        ["The Vagina Monologues","Producer & Ensemble","Ventura Court Theatre, LA"],
+                        ["The Curse of Danvers Manor","Daphne","Ventura Court Theatre, LA"],
+                        ["Lend Me A Tenor","Diana","Paradise Valley Theater, Phoenix"],
+                        ["A Flea In Her Ear","Nanette","John Paul Theatre, Phoenix"],
+                        ["Lysistrata","Ismenia/Peace","John Paul Theatre, Phoenix"]] %>
+
+    <table class='theater three-column'>
+      <tr>
+        <th>Theater</th>
+      </tr>
+      <% theater_roles.each do |title, role, location| %>
+        <tr>
+          <td class="col1"><%= title %></td>
+          <td class="col2"><%= role %></td>
+          <td class="col3"><%= location %></td>
+        </tr>
+      <% end %>
+    </table>
+
+    <table class='single-column'>
+      <tr>
+        <th>Commercials</th>
+      </tr>
+      <tr>
+        <td>Available Upon Request</td>
+      </tr>
+    </table>
+    <table class='training three-column'>
+      <tr>
+        <th>Training</th>
+      </tr>
+
+      <% trainings = [["Conor Woods","Meisner","Black Box Studio, Chicago"],
+                      ["Jack Bronis"," Micah Philbrook","Improv,Second City, Chicago"],
+                      ["Claire Simon","Audition Workshop","Acting Studio, Chicago"],
+                      ["Erica Daniels & Adam Belcuore","Audition Workshop","Acting Studio, Chicago"],
+                      ["Kate Devore","Voice Workshop","Acting Studio, Chicago"],
+                      ["Darrell W. Cox","Advanced Scene Study","Profiles Theatre, Chicago"],
+                      ["Kurt Naebig","Monologue","Acting Studio, Chicago"],
+                      ["Matt Miller","On-Camera Workshop","Acting Studio, Chicago"],
+                      ["Cameron Thor","Scene Study","Carter Thor Studio, LA"],
+                      ["Alice Carter","On-Camera/Cold Reading","Carter Thor Studio, LA"],
+                      ["Carolyne Barry","Commercial","Carolyne Barry Entertainment, LA"]] %>
+
+      <% trainings.each do |teacher, class_title, location| %>
+        <tr>
+          <td class="col1"><%= teacher %></td>
+          <td class="col2"><%= class_title %></td>
+          <td class="col3"><%= location %></td>
+        </tr>
+      <% end %>
+    </table>
+
+    <table class="single-column">
+      <tr>
+        <th>Education</th>
+      </tr>
+      <tr>
+        <td>BA, Broadcast Journalism, Walter Cronkite School, Arizona State University</td>
+      </tr>
+    </table>
+    <table class="single-column">
+      <tr>
+        <th>Skills/Interests</th>
+      </tr>
+      <tr>
+        <td>Driver’s License, US Passport, Jewelry Design, Yoga, Cycling, Whole Food/Organic Nutrition & Cooking, Writing, Traveling, Hiking, Barista, CoffeeMaster, Knitting, Editing: iMovie, Final Cut Express</td>
+      </tr>
+    </table>
+  </a>
+</div>
+
+<div id="bottom-buffer"></div>
