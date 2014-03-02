@@ -1,0 +1,34 @@
+<script type="text/javascript" src="/public/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/public/underscore-min.js"></script>
+<script type="text/javascript" src="/public/backbone-min.js"></script>
+<script type="text/javascript" src="/public/json2.js"></script>
+
+<div id="navigation-photo">
+  <div id="navigation-photo-buttons">
+    <ul>
+      <li><a href="/photos.html">headshots</a></li>
+      <li><a href="/production-photos.html">production photos</a></li>
+   </ul>
+ </div>
+</div>
+
+<div id="photo-container">
+  <div id="thumbs-container">
+    <ul id="thumbnails">
+    </ul>
+  </div>
+  <div id="front">
+  </div>
+</div>
+
+<script type="text/javascript" src="/scripts/thumb_model.js"></script>
+<script type="text/javascript" src="/scripts/thumb_collection.js"></script>
+<script type="text/javascript" src="/scripts/front_view.js"></script>
+<script type="text/javascript" src="/scripts/thumb_view.js"></script>
+<script type="text/javascript" src="/scripts/app_view.js"></script>
+<script type="text/javascript" src="/scripts/images.js"></script>
+
+<script type="text/javascript">
+  window.App = new AppView();
+  window.App.render();
+</script>

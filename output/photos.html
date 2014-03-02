@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>Rosa SanMarchi - Photos</title>
     <link href='http://fonts.googleapis.com/css?family=Diplomata+SC' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="resume_styles.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="photos_styles.css">
+    <link rel="stylesheet" href="stylesheets/resume_styles.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/photos_styles.css">
+    <link rel="stylesheet" href="stylesheets/video_styles.css">
   </head>
   <body>
     <div id="container">
@@ -26,7 +27,15 @@
           </div>
         </div>
         <div id="main">
-          <script type="text/javascript" src="/public/jquery-2.0.3.min.js"></script>
+          <script type="text/javascript">
+  var urls = [
+    {image: '/images/rosa_orange_800.jpg', thumb: '/images/rosa_orange_125.jpg'},
+    {image: '/images/rosa_smile_800.jpg',  thumb:'/images/rosa_smile_125.jpg'},
+    {image: '/images/rosa_gray_800.jpg',   thumb: '/images/rosa_gray_125.jpg'}
+  ]
+</script>
+
+<script type="text/javascript" src="/public/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="/public/underscore-min.js"></script>
 <script type="text/javascript" src="/public/backbone-min.js"></script>
 <script type="text/javascript" src="/public/json2.js"></script>
@@ -40,8 +49,6 @@
  </div>
 </div>
 
-
-
 <div id="photo-container">
   <div id="thumbs-container">
     <ul id="thumbnails">
@@ -50,14 +57,6 @@
   <div id="front">
   </div>
 </div>
-
-<script type="text/javascript">
-  var urls = [
-    {image: '/images/rosa_smile_800.jpg',  thumb:'/images/rosa_smile_125.jpg'},
-    {image: '/images/rosa_orange_800.jpg', thumb: '/images/rosa_orange_125.jpg'},
-    {image: '/images/rosa_gray_800.jpg',   thumb: '/images/rosa_gray_125.jpg'}
-  ]
-</script>
 
 <script type="text/javascript" src="/scripts/thumb_model.js"></script>
 <script type="text/javascript" src="/scripts/thumb_collection.js"></script>
@@ -70,6 +69,7 @@
   window.App = new AppView();
   window.App.render();
 </script>
+
         </div>
         <!--<div id="footer">-->
           <!--<div id="footer-text">-->

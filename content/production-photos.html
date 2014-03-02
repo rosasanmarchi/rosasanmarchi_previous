@@ -2,17 +2,6 @@
 title: Production Photos
 ---
 
-<%= render '_photo_header'%>
-
-<div id="photo-container">
-  <div id="thumbs-container">
-    <ul id="thumbnails">
-    </ul>
-  </div>
-  <div id="front">
-  </div>
-</div>
-
 <script type="text/javascript">
   var urls = [
     {image: '/images/fall_in_love1_800.jpg',   thumb: '/images/fall_in_love1_125.jpg'},
@@ -20,14 +9,4 @@ title: Production Photos
   ]
 </script>
 
-<script type="text/javascript" src="/scripts/thumb_model.js"></script>
-<script type="text/javascript" src="/scripts/thumb_collection.js"></script>
-<script type="text/javascript" src="/scripts/front_view.js"></script>
-<script type="text/javascript" src="/scripts/thumb_view.js"></script>
-<script type="text/javascript" src="/scripts/app_view.js"></script>
-<script type="text/javascript" src="/scripts/images.js"></script>
-
-<script type="text/javascript">
-  window.App = new AppView();
-  window.App.render();
-</script>
+<%= render '_photo_body' %>
