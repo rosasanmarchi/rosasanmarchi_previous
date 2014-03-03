@@ -1,0 +1,41 @@
+.resume {
+	font-weight: 300;
+  width: 960px;
+  padding: 0 auto;
+}
+
+.resume a:link, a:visited {
+  color: #000000;
+}
+.resume table {
+	margin: 5px auto 10px auto;
+}
+
+.resume td {
+	line-height: 19px;
+  font-size: 0.9em;
+}
+
+.resume th {
+	font-weight: bold;
+	text-align: left;
+  line-height: 22px;
+}
+
+.resume h3 {
+	font-weight: bold;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.three-column td {
+	width: 250px;
+}
+
+.single-column td {
+  width: 750px;
+}
+
+#bottom-buffer {
+  height: 40px;
+}
