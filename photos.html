@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Rosa SanMarchi - Photos</title>
+    <link href='http://fonts.googleapis.com/css?family=Diplomata+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/resume_styles.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/photos_styles.css">
+    <link rel="stylesheet" href="stylesheets/video_styles.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="content">
+        <div id="header">
+          <h1>Rosa SanMarchi</h1>
+          <div id="navigation">
+            <div id="navigation-buttons">
+              <ul>
+                <li><a href="/index.html">home</a></li>
+                <li><a href="/resume.html">resume</a></li>
+                <li><a href="/photos.html">photos</a></li>
+                <li><a href="/video.html">video</a></li>
+                <li><a href="/contact.html">contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="main">
+          <script type="text/javascript">
+  var urls = [
+    {image: '/images/rosa_orange_800.jpg', thumb: '/images/rosa_orange_125.jpg'},
+    {image: '/images/rosa_smile_800.jpg',  thumb:'/images/rosa_smile_125.jpg'},
+    {image: '/images/rosa_gray_800.jpg',   thumb: '/images/rosa_gray_125.jpg'}
+  ]
+</script>
+
+<script type="text/javascript" src="/public/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/public/underscore-min.js"></script>
+<script type="text/javascript" src="/public/backbone-min.js"></script>
+<script type="text/javascript" src="/public/json2.js"></script>
+
+<div id="navigation-photo">
+  <div id="navigation-photo-buttons">
+    <ul>
+      <li><a href="/photos.html">headshots</a></li>
+      <li><a href="/production-photos.html">production photos</a></li>
+   </ul>
+ </div>
+</div>
+
+<div id="photo-container">
+  <div id="thumbs-container">
+    <ul id="thumbnails">
+    </ul>
+  </div>
+  <div id="front">
+  </div>
+</div>
+
+<script type="text/javascript" src="/scripts/thumb_model.js"></script>
+<script type="text/javascript" src="/scripts/thumb_collection.js"></script>
+<script type="text/javascript" src="/scripts/front_view.js"></script>
+<script type="text/javascript" src="/scripts/thumb_view.js"></script>
+<script type="text/javascript" src="/scripts/app_view.js"></script>
+<script type="text/javascript" src="/scripts/images.js"></script>
+
+<script type="text/javascript">
+  window.App = new AppView();
+  window.App.render();
+</script>
+
+        </div>
+        <!--<div id="footer">-->
+          <!--<div id="footer-text">-->
+            <!--Copyright 2014 Rosa SanMarchi - info@rosasanmarchi.com-->
+          <!--</div>-->
+        <!--</div>-->
+      </div>
+    </div>
+  </body>
+</html>
+
